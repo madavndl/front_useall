@@ -2,40 +2,52 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+
 </head>
 
 <body>
-  <section class="area-login">
+    <section class="area-login">
+        <div class="login">
 
-    <div id="login">
 
-      <h1>
-        Bem vindo ao <span>LOGIN</span>
-      </h1>
+            <h1>
+                Bem vindo ao <span>LOGIN</span>
+            </h1>
 
-      <p>
-        Preencha os dados do login para acessar
-      </p>
+            <p>
+                Preencha os dados do login para acessar
+            </p>
 
-      <form method="post">
-        <label for="UC">UC</label>
-        <input type="text" name="UC" placeholder="Unidade Consumidora" autofocus><br>
+            <div class="usuario"></div>
+            <form action="post">
 
-        <label for="Senha">Senha</label>
-        <p><input type="password" name="senha" placeholder="Digite sua senha"></p><br>
+                <li>
+                    <label for="UC"> <b>UC</b> </label>
+                    <input type="text" name="UC" placeholder="Unidade Consumidora" autofocus>
+                </li>
 
-        <p><input type="submit" value="ENTRAR"></p>
+                <li>
+                    <label for="SENHA"> <b>Senha</b> </label>
+                    <input type="password" name="senha" placeholder="Digite sua senha">
+                </li>
 
-      </form>
-      <p>Ainda não possui uma conta? <a href="">CRIAR CONTA</a></p>
+                <li>
+                    <input id="entrar" type="submit" value="ENTRAR">
+                </li>
 
-    </div>
-  </section>
+            </form>
+            <br>
+            <p><a href=""><b>Esqueci minha senha</b></a></p>
+            <p>Ainda não possui uma conta? <a href=""> <b>CRIAR CONTA</b> </a></p>
+        </div>
+
+        </div>
+    </section>
 </body>
 
 </html>

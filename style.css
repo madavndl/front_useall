@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 h1 {
-    font-size: 30px;
-    padding: 30px;
+    font-size: 38px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    padding-top: 50px;
     color: rgb(65, 65, 65);
+    
+    
 }
-
 span {
     color: #644FE0;
 }
@@ -17,38 +16,76 @@ span {
 body {
     background: white url('assets/Logins.png') center center no-repeat fixed;
     background-size: cover;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    /*para nao aparecer uma barra de rolagem*/
 }
 
-div {
-    height: 600px;
-    width: 500px;
-    background-color: rgb(255, 255, 255);
-    margin: auto;
+.area-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+} 
+
+.login {
+    background-color: #FAFAFA;
+    width: 400px;
+    height: 450px;
+    padding: 35px;
     border-radius: 10px;
-    box-shadow: 0px 1px 10px rgb(121, 121, 121);
 }
 
-form {
-    text-align: center;
+.login form {
+    width: 310px;
+    margin: 0px;
+    /*para ficar um input em cima do outro*/
+    text-align: right;
 }
 
-p {
-    text-align: center;
+.login input {
+    margin-top: 10px;
+    /*para ter um espaçamento entre eles*/
+    width: 60%;
+    color: rgb(65, 65, 65);
+    background-color: #DBDCFB;
+    border: none;
+    height: 28px;
+    outline: none;
+    border-radius: 4px;
+    padding-left: 6px;
+}
+
+input::placeholder {
+    color: rgb(65, 65, 65);
+    font-size: 13px;
+}
+
+form [type="submit"]{
+    background-color: #644FE0;
+    color: whitesmoke;
+    width: 62%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+li {
+    list-style-type: none;
 }
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 a:hover {
-
     color: rgb(25, 0, 255);
-}
-
-form {
-    text-align: center;
+    text-decoration: underline;
 }
 
 p {
     text-align: center;
 }
+
