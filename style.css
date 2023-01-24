@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+h1 {
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    color: rgb(65, 65, 65);
+}
+
+span {
+    color: #644FE0;
+}
+
+
+body {
+    background: white url('assets/Logins.png') center center no-repeat fixed;
+    background-size: cover;
+}
+
+div {
+    height: 600px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px rgb(121, 121, 121);
+}
+
+form {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+
+    color: rgb(25, 0, 255);
+}
+
+form {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
