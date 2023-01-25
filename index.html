@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/icon_useall.png">
+    <script src="js/snippet-javascript-console.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
+
     <title>Login</title>
 
 </head>
@@ -14,26 +19,36 @@
     <section class="area-login">
         <div class="login">
 
-
+            <img src="assets/logo_useall.png" alt="">
             <h1>
                 Bem vindo ao <span>LOGIN</span>
             </h1>
 
-            <p>
+            <p id="preencherdados">
                 Preencha os dados do login para acessar
             </p>
 
             <div class="usuario"></div>
-            <form action="post">
 
+            <form action="post">
                 <li>
-                    <label for="UC"> <b>UC</b> </label>
-                    <input type="text" name="UC" placeholder="Unidade Consumidora" autofocus>
+                    <label for="cpfcnpj"> <b>CPF/CNPJ</b> </label>
+                    <input class="cpfcnpj" id="cpfcnpj" type="text" name="cpfcnpj" placeholder="CPF/CNPJ" autofocus
+                        autocomplete="off">
+                    <script type="text/javascript">
+                        var options = {
+                            onKeyPress: function (cpf, ev, el, op) {
+                                var masks = ['000.000.000-000', '00.000.000/0000-00'];
+                                $('.cpfcnpj').mask((cpf.length > 14) ? masks[1] : masks[0], op);
+                            }
+                        }
+                        $('.cpfcnpj').length > 11 ? $('.cpfcnpj').mask('00.000.000/0000-00', options) : $('.cpfcnpj').mask('000.000.000-00#', options);
+                    </script>
                 </li>
 
                 <li>
                     <label for="SENHA"> <b>Senha</b> </label>
-                    <input type="password" name="senha" placeholder="Digite sua senha">
+                    <input id="password" type="password" name="senha" placeholder="Digite sua Senha">
                 </li>
 
                 <li>
@@ -41,12 +56,14 @@
                 </li>
 
             </form>
-            <br>
-            <p><a href=""><b>Esqueci minha senha</b></a></p>
-            <p>Ainda não possui uma conta? <a href=""> <b>CRIAR CONTA</b> </a></p>
+
+            <p id="esquecisenha"><a target="_blank" href=""><b>Esqueci minha senha</b></a></p>
+            <p id="naopossuiconta">Ainda não possui uma conta? <a target="_blank" href=""> <b>Clique aqui</b> </a></p>
+
         </div>
 
         </div>
+
     </section>
 </body>
 

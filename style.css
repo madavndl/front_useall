@@ -5,13 +5,13 @@ h1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: rgb(65, 65, 65);
-    
-    
+    margin-top: 10px;
+    text-shadow: 0px 1px 2px rgb(107, 106, 106);
 }
+
 span {
     color: #644FE0;
 }
-
 
 body {
     background: white url('assets/Logins.png') center center no-repeat fixed;
@@ -26,34 +26,41 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-} 
+}
 
 .login {
     background-color: #FAFAFA;
-    width: 400px;
-    height: 450px;
-    padding: 35px;
+    width: 450px;
+    height: 520px;
+    padding: 10px 35px 35px 35px;
     border-radius: 10px;
+    box-shadow: 1px 5px 50px rgb(91, 79, 148);
 }
 
 .login form {
     width: 310px;
-    margin: 0px;
+    margin: 40px;
     /*para ficar um input em cima do outro*/
     text-align: right;
+    margin-bottom: 0px;
 }
 
 .login input {
     margin-top: 10px;
     /*para ter um espaçamento entre eles*/
-    width: 60%;
+    width: 70%;
     color: rgb(65, 65, 65);
     background-color: #DBDCFB;
     border: none;
     height: 28px;
     outline: none;
     border-radius: 4px;
-    padding-left: 6px;
+    padding-left: 8px;
+}
+
+.usuario {
+    margin-left: 90px;
+    margin-top: 75px;
 }
 
 input::placeholder {
@@ -61,10 +68,10 @@ input::placeholder {
     font-size: 13px;
 }
 
-form [type="submit"]{
+form [type="submit"] {
     background-color: #644FE0;
     color: whitesmoke;
-    width: 62%;
+    width: 73%;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -89,3 +96,34 @@ p {
     text-align: center;
 }
 
+#preencherdados {
+    position: absolute;
+    padding-left: 85px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#esquecisenha {
+    width: 66%;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding-top: 0px;
+}
+
+#naopossuiconta {
+    margin-top: 80px;
+}
+
+img {
+    padding-left: 95px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    /*para não aparecer as setas do tipo number*/
+}
