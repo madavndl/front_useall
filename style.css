@@ -1,12 +1,12 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 h1 {
-    font-size: 38px;
-    text-align: center;
+    margin-top: 40px;
     font-family: 'Roboto', sans-serif;
-    color: rgb(65, 65, 65);
-    margin-top: 10px;
-    text-shadow: 0px 1px 2px rgb(107, 106, 106);
+    text-align: center;
+    padding-bottom: 30px;
+
 }
 
 span {
@@ -14,53 +14,69 @@ span {
 }
 
 body {
-    background: white url('assets/Logins.png') center center no-repeat fixed;
+    height: 90vh;
+    background: white url(assets/background.png) center center no-repeat fixed;
     background-size: cover;
-    overflow: hidden;
     font-family: 'Roboto', sans-serif;
-    /*para nao aparecer uma barra de rolagem*/
+    text-align: center;
+    overflow: hidden;
 }
 
-.area-login {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+div#imagem {
+    position: relative;
+    left: 50%;
+    transform: translateX(-49%);
+    margin-top: 70px;
 }
 
-.login {
-    background-color: #FAFAFA;
-    width: 450px;
-    height: 520px;
-    padding: 10px 35px 35px 35px;
+div#dados {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    background-color: rgb(255, 251, 251);
+    width: 500px;
+    height: 600px;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 1px 5px 50px rgb(91, 79, 148);
+    box-shadow: 1px 0px 30px rgb(193, 192, 199);
 }
 
-.login form {
-    width: 310px;
+form {
+    width: 500px;
     margin: 40px;
     /*para ficar um input em cima do outro*/
-    text-align: right;
     margin-bottom: 0px;
 }
 
-.login input {
-    margin-top: 10px;
+#tipopessoa {
+    margin-top: 5px;
+    margin-bottom: 15px;
     /*para ter um espaçamento entre eles*/
-    width: 70%;
+    width: 61.5%;
     color: rgb(65, 65, 65);
-    background-color: #DBDCFB;
-    border: none;
-    height: 28px;
+    height: 30.5px;
     outline: none;
-    border-radius: 4px;
     padding-left: 8px;
+    background: #FAFAFC;
+    border: 1px solid #66666C;
+    border-radius: 8px;
+    padding-left: 0px; 
 }
 
-.usuario {
-    margin-left: 90px;
-    margin-top: 75px;
+input {
+   position: relative;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-right: 0px;
+    /*para ter um espaçamento entre eles*/
+    width: 60%;
+    color: rgb(65, 65, 65);
+    height: 28px;
+    outline: none;
+    background: #FAFAFC;
+    border: 1px solid #66666C;
+    border-radius: 8px;    
 }
 
 input::placeholder {
@@ -68,62 +84,60 @@ input::placeholder {
     font-size: 13px;
 }
 
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
 form [type="submit"] {
-    background-color: #644FE0;
+    background: rgb(48, 46, 46);
     color: whitesmoke;
-    width: 73%;
-    font-family: 'Roboto', sans-serif;
+    width: 62%;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
+    border: none;
+}
+
+form [type="submit"]:hover{
+    background-color: #644FE0;
 }
 
 li {
     list-style-type: none;
 }
 
-a {
+fieldset{
+    border:none;
+    text-align: right;
+    width: 300px;
+}
+
+#esquecisenha {
+    width: 58%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding-top: 0px;
+    margin-top: 0%;
+    
+}
+
+a{
     color: black;
     text-decoration: none;
 }
 
-a:hover {
-    color: rgb(25, 0, 255);
+a:hover{
+    color: #644FE0;
     text-decoration: underline;
+
 }
 
-p {
-    text-align: center;
-}
-
-#preencherdados {
-    position: absolute;
-    padding-left: 85px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-#esquecisenha {
-    width: 66%;
-    text-align: right;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    padding-top: 0px;
-}
 
 #naopossuiconta {
-    margin-top: 80px;
+    margin-top: 25px;
+    width: 85%;
 }
 
-img {
-    padding-left: 95px;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    /*para não aparecer as setas do tipo number*/
-}
